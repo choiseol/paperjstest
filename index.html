@@ -123,7 +123,7 @@ Ball.prototype = {
 //--------------------- main ---------------------
 
 var balls = [];
-var numBalls = 4;
+var numBalls = 10;
 for (var i = 0; i < numBalls; i++) {
 	var position = Point.random() * view.size;
 	var vector = new Point({
@@ -150,11 +150,19 @@ function onFrame() {
 
 </head>
 <body>
-	<canvas id="myCanvas" resize></canvas>
+
+	<div>
+		
+		<canvas id="myCanvas" resize style="background: none;">	</canvas>
+		<h>어쩌구저쩌구나라랄ㅇ날ㅇ낭낭라ㅣㅓ슬라임액체괴물ㄹㄹㄹ</h>
+		<img src="https://i.ytimg.com/vi/9_VAmXRMC3Q/maxresdefault.jpg">
+
+	</div>
 </body>
 
 <style type="text/css">
 	
-body{width: 1000px; height: 800px;}
+#myCanvas{width:100%;height:300px;}
+div{font-size: 2em;}
 </style>
 </html>
